@@ -1,1 +1,3 @@
 # Todo-list
+
+A todo list to practice class/object, manipulating the dom, using webpack, storing data on local computer...
