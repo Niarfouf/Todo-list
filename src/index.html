@@ -5,8 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <div id="navbar"></div>
-    <div id="content"></div>
-    <div id="footer"></div>
+    <div id="background">
+      <div id="main">
+        <div class="form-popup" id="popup-Todo">
+          <form action="" class="form-todo">
+            <h2>Add a todo :</h2>
+            <label for="title"> Title: </label>
+            <input
+              type="text"
+              placeholder="Todo's title..."
+              name="title"
+              id="title"
+              required
+            />
+            <label for="description"> Description: </label>
+            <input
+              type="text"
+              placeholder="Todo's description..."
+              name="description"
+              id="description"
+            />
+            <label for="date"> Due date: </label>
+            <input
+              type="date"
+              placeholder="Todo's duedate"
+              name="date"
+              id="date"
+            />
+            <label for="priority"> Priority: </label>
+            <select name="priority" id="priority">
+              <option value="low">Low</option>
+              <option value="medium">Medium</option>
+              <option value="high">High</option>
+            </select>
+            <label for="projectSelect">Projects:</label>
+            <select name="projectSelect" id="projectSelect"></select>
+            <button type="submit" class="btn">Add</button>
+            <button type="button" class="btn cancel" id="cancel">X</button>
+          </form></div>
+          <div class="form-popup" id="popup-Project">
+            <form action="" class="form-project">
+              <h2>Create a new project:</h2>
+              <label for="title"> Name: </label>
+              <input
+                type="text"
+                placeholder="Project's name..."
+                name="name"
+                id="name"
+                required
+              />
+              <button type="submit" class="btn">Add</button>
+            <button type="button" class="btn cancel" id="cancel2">X</button>
+        </div>
+        <div id="navbar">My TODO LIST</div>
+        <div id="content">
+          <div id="project-todo">
+            <div id="projectsDiv"></div>
+            <div id="addDiv">
+              <button id="addTask">Add todo</button>
+              <button id="createProject">Create project</button>
+            </div>
+          </div>
+          <div id="tasksDiv"></div>
+        </div>
+        <div id="footer">Created by Niarfouf</div>
+      </div>
+    </div>
   </body>
 </html>

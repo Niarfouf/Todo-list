@@ -8,5 +8,42 @@ html {
 body {
   margin: 0;
   padding: 0;
+  
+}
+
+#background {
+  padding: 200px 200px;
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-height: 100vh;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  min-height: 500px;
+  width: 800px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#content {
+  flex: auto;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+
+.form-popup {
+  display: none;
+  position: absolute;
+  width: 200px;
+  background-color: blueviolet;
+}
+
+#project-todo {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-rows: 1fr 50px;
 }
